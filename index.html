@@ -34,6 +34,12 @@
       <li class="navbar__menu__itme">Testimonial</li>
       <li class="navbar__menu__itme">Contact</li>
     </ul>
+
+    <!-- Toggle buttoon -->
+    <button class="navbar__toggle-btn">
+      <i class="fas fa-bars"></i>
+    </button>
+
   </nav>
 
   <!--Home-->
@@ -50,7 +56,7 @@
     <h1>About me</h1>
     <p>나를 잘 어필할 수 있는 문장들~ 나는 이런일을 했고 프론트앤드 뭐 관심있고 등등 2~3문장 경력</p>
     <div class="about__majors">
-      <div class="majors">
+      <div class="major">
         <!-- html css 자바스크립트 같은걸로 나누면됨. 리엑트도 등등 -->
         <div class="majors__icon">
           <i class="fas fa-award"></i>
@@ -58,14 +64,14 @@
         <h2 class="majors__title">프론트 앤드</h2>
         <div class="majors__description">html, css, 자바스크립트 등등</div> 
       </div>
-      <div class="majors">
+      <div class="major">
         <div class="majors__icon">
           <i class="fas fa-award"></i>
         </div>
         <h2 class="majors__title">프론트 앤드</h2>
         <div class="majors__description">html, css, 자바스크립트 등등</div> 
       </div>
-      <div class="majors">
+      <div class="major">
         <div class="majors__icon">
           <i class="fas fa-award"></i>
         </div>
@@ -170,7 +176,8 @@
 
   <!--Work-->
   <section id="work" class="section">
-    <h1>My Work</h1>
+    <div class="section__container">
+      <h1>My Work</h1>
     <h3>projects</h3>
     <div class="work__categories">
       <button class="category__btn active">All<span class="category__count">8</span></button>
@@ -245,26 +252,40 @@
       </a>
     </div>
 
-
+    </div>
   </section>
 
   <!--Testimonials-->
   <section id="testimonials" class="section">
-    <h1>testimonials</h1>
-    <h3>나를 추천해준 사람들</h3>
-    <div class="testimonial">
-      <img src="../imgs/555.jpg" alt="" class="testimonial__avatar">
-      <div class="testimonial__speech-bubble">
-        <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-        <p class="name"><a href="">이상훈/삼성</a></p>
+    <div class="section__container">
+      <h1>testimonials</h1>
+      <h3>나를 추천해준 사람들</h3>
+      <div class="testimonials">
+        <div class="testimonial">
+          <img src="../imgs/555.jpg" alt="" class="testimonial__avatar">
+          <div class="testimonial__speech-bubble">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              fuga libero nulla eveniet aperiam laborum, quis provident
+              quibusdam officiis reprehenderit, placeat neque perspiciatis vero
+              explicabo tempora, dignissimos accusantium inventore ducimus!
+            </p>
+            <p class="name"><a href="">이상훈/삼성</a></p>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial__speech-bubble">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              fuga libero nulla eveniet aperiam laborum, quis provident
+              quibusdam officiis reprehenderit, placeat neque perspiciatis vero
+              explicabo tempora, dignissimos accusantium inventore ducimus!
+            </p>            
+            <p class="name"><a href="">이상훈/삼성</a></p>
+          </div>
+          <img src="../imgs/555.jpg" alt="" class="testimonial__avatar">
+        </div>
       </div>
-    </div>
-    <div class="testimonial">
-      <div class="testimonial__speech-bubble">
-        <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-        <p class="name"><a href="">이상훈/삼성</a></p>
-      </div>
-      <img src="../imgs/555.jpg" alt="" class="testimonial__avatar">
     </div>
   </section>
 
