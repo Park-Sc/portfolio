@@ -182,15 +182,23 @@
       <h1>My Work</h1>
     <h3>projects</h3>
     <div class="work__categories">
-      <button class="category__btn active">All<span class="category__count">8</span></button>
-      <button class="category__btn">프론트<span class="category__count">4</span></button>
-      <button class="category__btn">백앤드<span class="category__count">2</span></button>
-      <button class="category__btn">모바일<span class="category__count">2</span></button> 
+      <button class="category__btn active" data-filter="*">
+        All<span class="category__count">8</span>
+      </button>
+      <button class="category__btn" data-filter="front-end">
+        프론트<span class="category__count">4</span>
+      </button>
+      <button class="category__btn" data-filter="back-end">
+        백앤드<span class="category__count">2</span>
+      </button>
+      <button class="category__btn" data-filter="mobile">
+        모바일<span class="category__count">2</span>
+      </button> 
       <!-- 카테코리마다 걍 나누면됨 이부분은 약간 애매할듯.. -->
     </div>
 
     <div class="work__projects">
-      <a href="#" target="blank" class="project">
+      <a href="#" target="blank" class="project" data-type="mobile">
         <img src="/imgs/555.jpg" alt="" class="project__img">
         <!-- 이미지 스크린샷한 것을 넣으면 됨. -->
         <div class="project__description">
@@ -199,7 +207,7 @@
         </div>
       </a>
 
-      <a href="#" target="blank" class="project">
+      <a href="#" target="blank" class="project" data-type="back-end">
         <img src="/imgs/555.jpg" alt="" class="project__img">
         <!-- 이미지 스크린샷한 것을 넣으면 됨. -->
         <div class="project__description">
@@ -208,7 +216,7 @@
         </div>
       </a>
 
-      <a href="#" target="blank" class="project">
+      <a href="#" target="blank" class="project" data-type="back-end">
         <img src="/imgs/555.jpg" alt="" class="project__img">
         <!-- 이미지 스크린샷한 것을 넣으면 됨. -->
         <div class="project__description">
@@ -217,7 +225,7 @@
         </div>
       </a>
 
-      <a href="#" target="blank" class="project">
+      <a href="#" target="blank" class="project" data-type="back-end">
         <img src="/imgs/555.jpg" alt="" class="project__img">
         <!-- 이미지 스크린샷한 것을 넣으면 됨. -->
         <div class="project__description">
@@ -226,7 +234,7 @@
         </div>
       </a>
 
-      <a href="#" target="blank" class="project">
+      <a href="#" target="blank" class="project" data-type="front-end">
         <img src="/imgs/555.jpg" alt="" class="project__img">
         <!-- 이미지 스크린샷한 것을 넣으면 됨. -->
         <div class="project__description">
@@ -235,7 +243,7 @@
         </div>
       </a>
 
-      <a href="#" target="blank" class="project">
+      <a href="#" target="blank" class="project" data-type="front-end">
         <img src="/imgs/555.jpg" alt="" class="project__img">
         <!-- 이미지 스크린샷한 것을 넣으면 됨. -->
         <div class="project__description">
@@ -244,7 +252,16 @@
         </div>
       </a>
 
-      <a href="#" target="blank" class="project">
+      <a href="#" target="blank" class="project" data-type="front-end">
+        <img src="/imgs/555.jpg" alt="" class="project__img">
+        <!-- 이미지 스크린샷한 것을 넣으면 됨. -->
+        <div class="project__description">
+          <h3>유튜브 사이트</h3>
+          <span>클론코딩 html css를 이용함</span>
+        </div>
+      </a>
+
+      <a href="#" target="blank" class="project" data-type="front-end">
         <img src="/imgs/555.jpg" alt="" class="project__img">
         <!-- 이미지 스크린샷한 것을 넣으면 됨. -->
         <div class="project__description">
