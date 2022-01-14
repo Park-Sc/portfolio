@@ -163,6 +163,21 @@ p {
 }
 
 
+.text_box{
+  font-size: 2rem;
+  text-align: center;
+}
+
+.blink {
+  animation: blink 0.5s infinite;
+  font-size: 2.5rem;
+}
+
+@keyframes blink {
+  to {
+    opacity: 0;
+  }
+}
 
 .home__title,
 .home__description {
@@ -180,7 +195,7 @@ p {
 }
 
 .home__contact:hover {
-  background-color: var(--color-orange);
+  background-color: var(--color-pink);
 }
 
 /* Section common */
@@ -219,7 +234,7 @@ p {
 }
 
 .majors__icon:hover i {
-  color: pink;
+  color: var(--color-orange);
   transform: rotate(-30deg) scale(1.1);
 }
 
@@ -235,6 +250,7 @@ p {
 .job {
   display: flex;
   align-items: center;
+  margin-top: 20px;
 }
 
 .job__i{
@@ -380,7 +396,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 280px;
+  width: 320px;
   height: 250px;
   margin: 2px;
   background-color: var(--color-light-white)
@@ -408,6 +424,7 @@ p {
   opacity: 0;
   transform: translateY(10px);
   transition: all var(--animation-duration) ease;
+  padding: 0 15px;
 }
 
 .project:hover .project__description {
@@ -480,13 +497,20 @@ p {
   margin-top: 40px;
 }
 
-.goal {
-  width: 230px;
-  height: 230px;
+.goal__icon {
+  width: 170px;
+  height: 170px;
   border: 1px solid var(--color-blue);
   color: var(--color-blue);
   font-size: 70px;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.goal__title {
+  color: var(--color-dark-grey);
 }
 
 /* Contact */
@@ -502,7 +526,7 @@ p {
 }
 
 .contact__title{
-  margin: 32px 0;
+  margin: 25px 0;
 
 }
 
@@ -510,6 +534,10 @@ p {
   font-size: var(--font-large);
   margin: 24px 0;
   transition:all var(--animation-duration) ease
+}
+
+.contact__links a{
+  font-size: 50px;
 }
   
 .contact__links i:hover{

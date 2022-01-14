@@ -1,6 +1,21 @@
 'use strict'
 
 
+const content = "Hi. I'm SuChang ";
+const text = document.querySelector(".text");
+let i = 0;
+
+function typing(){
+    let txt = content[i++];
+    text.innerHTML += txt=== "\n" ? "<br/>": txt;
+    if (i > content.length) {
+        text.textContent = "";
+        i = 0;
+    }
+}
+setInterval(typing, 250)
+
+
 // 스크롤하면 MENU가 애니메이션됨. 
 
 const navbar = document.querySelector('#navbar');
