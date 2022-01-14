@@ -30,8 +30,8 @@
       <li class="navbar__menu__itme active" data-link="#home">Home</li>
       <li class="navbar__menu__itme" data-link="#about">About</li>
       <li class="navbar__menu__itme" data-link="#skills">Skills</li>
-      <li class="navbar__menu__itme" data-link="#work">My work</li>
-      <li class="navbar__menu__itme" data-link="#testimonials">Testimonial</li>
+      <li class="navbar__menu__itme" data-link="#work">Works</li>
+      <li class="navbar__menu__itme" data-link="#testimonials">My plan</li>
       <li class="navbar__menu__itme" data-link="#contact">Contact</li>
     </ul>
 
@@ -60,8 +60,8 @@
   <!--About-->
   <section id="about" class="section section__container">
     <h1>About me</h1>
-    <p>저는 국비지원 학원에서 6개월을 수강한 후 홀릭디자인 이라는 회사에서 6개월 간 계약직을 했습니다. 그 후 제가 코딩으로는 많이 부족하다는 것을 꺠달았습니다. 가장 부족하다고 여기던 자바스크립트를
-      기초부터 ES6 문법까지 공부를 하였습니다. 지금은 자바스크립트 복습과 리엑트를 공부하고 있습니다.</p>
+    <p>국비 지원 학원에서 6개월 수강후 디자인 회사에서 6개월간 계약직으로 근무하였습니다.<br>
+      계약만료 후 부족했던 부분을 채우고자 자바스크립트 기초부터 ES6 문법,리엑트등 꾸준히 공부하고 있습니다.</p>
     <div class="about__majors">
       <div class="major">
         <!-- html css 자바스크립트 같은걸로 나누면됨. 리엑트도 등등 -->
@@ -95,7 +95,7 @@
       <div class="job">
         <img src="imgs/gnb_logo.gif" alt="job-logo" class="job__logo">
         <div class="job__description">
-          <p class="job__name">홀릭디자인에서 웹디자인일을 했습니다. 주로 했던 업무는 코딩 작업, 웹디자인 제작, 포토샵을 위주로 했습니다. </p>
+          <p class="job__name">홀릭디자인에서 웹디자인 관련하여 코딩,포토샵 위주의 업무를 맡아 근무하였습니다.</p>
           <p class="job__period">2021.01~2021.06</p>
         </div>
       </div>
@@ -176,13 +176,13 @@
       <h3>My various projects.</h3>
       <div class="work__categories">
         <button class="category__btn selected" data-filter="*">
-          All<span class="category__count">8</span>
+          All<span class="category__count">7</span>
         </button>
         <button class="category__btn" data-filter="site">
           Site<span class="category__count">4</span>
         </button>
         <button class="category__btn" data-filter="play">
-          Play<span class="category__count">2</span>
+          Play<span class="category__count">3</span>
         </button>
         <!-- <button class="category__btn" data-filter="mobile">
         모바일<span class="category__count">2</span>
@@ -196,7 +196,7 @@
           <!-- 이미지 스크린샷한 것을 넣으면 됨. -->
           <div class="project__description">
             <h3>당근찾기 게임</h3>
-            <span>javascript를 이용하여 만들었으며, 5초안에 당근을 모두 찾아서 클릭하는 게임입니다.</span>
+            <span>javascript를 이용하여 다양한 함수를 미리 만들어 놓고, 다른 상태일 떄 마다 함수를 대입하여 실행하게 만들었습니다. 게임룰은 5초안에 벌레를 피하면서 당근을 모두 찾아 클릭하는 게임입니다.</span>
           </div>
         </a>
 
@@ -242,6 +242,15 @@
           <div class="project__description">
             <h3>PNC TECH</h3>
             <span>이 사이트는 현재 오픈되어 있는 사이트로, 전 회사에서 작업한 것 입니다. 메인페이지부분은 하지 않았으며, 주로 서브페이지의 전체적인 html과 css를 구성 했습니다.</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/Park-Sc/shopping-category.git" target="blank" class="project" data-type="play">
+          <img src="imgs/shooping-category.png" alt="" class="project__img">
+          <!-- 이미지 스크린샷한 것을 넣으면 됨. -->
+          <div class="project__description">
+            <h3>shooping category</h3>
+            <span>ajax를 통해 데이터를 가져와서 카테고리에 맞게 데이터를 반환해주는 쇼핑몰 카테고리 앱입니다.</span>
           </div>
         </a>
 
@@ -306,7 +315,7 @@
     <h1 class="contact__title">Let's Talk</h1>
     <h2 class="contact__email">ppk5508@naver.com</h2>
     <div class="contact__links">
-      <a href="#" target="blank">
+      <a href="https://github.com/Park-Sc?tab=repositories" target="blank">
         <i class="fab fa-github"></i>
       </a>
 

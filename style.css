@@ -381,9 +381,11 @@ p {
 .work__projects {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: start;
   opacity: 1;
   transition: all var(--animation-duration) ease-out;
+  width: 990px;
+  margin: 0 auto;
 }
 
 .work__projects.anim-out{
@@ -569,6 +571,11 @@ p {
 }
 
 
+@media screen and (max-width: 1090px) {
+  .work__projects {
+    width: 700px;
+  }
+}
 @media screen and (max-width: 768px) {
 
   :root {
@@ -609,8 +616,8 @@ p {
   }
 
   .section {
-    padding: 20px;
-    padding-top: 40px;
+    padding: 50px 20px 60px;
+
   }
 
   .about__majors{
@@ -631,8 +638,13 @@ p {
     margin: 4px 0;
   }
 
+  .work__projects {
+    width: auto;
+  }
+
   .project{
     flex-grow: 1;
+    width: 100%;
   }
 
 
