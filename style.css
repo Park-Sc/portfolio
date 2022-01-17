@@ -108,7 +108,7 @@ p {
 
 #navbar.navbar--dark {
   background-color: var(--color-pink);
-  padding:8px;
+  padding: 8px;
 }
 
 .navbar__logo {
@@ -126,7 +126,6 @@ p {
   cursor: pointer;
   border: 1px solid transparent;
   border-radius: var(--size-border-radius)
-  
 }
 
 
@@ -136,7 +135,7 @@ p {
   background-color: var(--color-dark-pink);
 }
 
-.navbar__toggle-btn{
+.navbar__toggle-btn {
   position: absolute;
   top: 24px;
   right: 32px;
@@ -163,7 +162,7 @@ p {
 }
 
 
-.text_box{
+.text_box {
   font-size: 2rem;
   text-align: center;
 }
@@ -253,7 +252,7 @@ p {
   margin-top: 20px;
 }
 
-.job__i{
+.job__i {
   width: 60px;
   font-size: 30px;
 }
@@ -388,7 +387,7 @@ p {
   margin: 0 auto;
 }
 
-.work__projects.anim-out{
+.work__projects.anim-out {
   opacity: 0;
   transform: scale(0.96) translateY(40px);
 }
@@ -517,40 +516,40 @@ p {
 
 /* Contact */
 
-#contact{
+#contact {
   background-color: var(--color-pink);
 }
 
 .contact__title,
 .contact__email,
-.contact__rights{
+.contact__rights {
   color: var(--color-white);
 }
 
-.contact__title{
+.contact__title {
   margin: 25px 0;
 
 }
 
-.contact__links{
+.contact__links {
   font-size: var(--font-large);
   margin: 24px 0;
-  transition:all var(--animation-duration) ease
+  transition: all var(--animation-duration) ease
 }
 
-.contact__links a{
+.contact__links a {
   font-size: 50px;
 }
-  
-.contact__links i:hover{
-  transform:scale(1.1);
+
+.contact__links i:hover {
+  transform: scale(1.1);
   color: var(--color-yellow);
 }
 
 
 /* scroll */
 
-.arrow-up{
+.arrow-up {
   position: fixed;
   bottom: 40px;
   right: 40px;
@@ -565,7 +564,7 @@ p {
   pointer-events: none;
 }
 
-.arrow-up.visible{
+.arrow-up.visible {
   opacity: 1;
   pointer-events: auto;
 }
@@ -576,24 +575,36 @@ p {
     width: 700px;
   }
 }
+
+@media screen and (max-width: 869px) {
+  .goals {
+    flex-direction: column;
+    align-items: center;
+  }
+  .goal {
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (max-width: 768px) {
 
   :root {
-        /* Font size */
+    /* Font size */
     --font-large: 30px;
     --font-medium: 18px;
     --font-regular: 16px;
     --font-small: 14px;
     --font-micro: 12px;
   }
-  .navbar__toggle-btn{
+
+  .navbar__toggle-btn {
     display: block;
     top: 16px;
     right: 16px;
     font-size: var(--font-medium);
   }
 
-  #navbar{
+  #navbar {
     flex-direction: column;
     align-items: flex-start;
     background-color: var(--color-pink);
@@ -603,14 +614,14 @@ p {
     padding: 16px;
   }
 
-  .navbar__menu{
+  .navbar__menu {
     flex-direction: column;
     text-align: center;
     width: 100%;
     display: none;
   }
 
-  .navbar__menu.open{
+  .navbar__menu.open {
     display: block;
     margin-bottom: 0;
   }
@@ -620,17 +631,17 @@ p {
 
   }
 
-  .about__majors{
+  .about__majors {
     flex-direction: column;
     margin-top: 30px;
     margin-bottom: 0px;
   }
 
-  .major{
+  .major {
     margin-bottom: 30px;
   }
 
-  .skillset{
+  .skillset {
     flex-direction: column;
   }
 
@@ -642,18 +653,18 @@ p {
     width: auto;
   }
 
-  .project{
+  .project {
     flex-grow: 1;
     width: 100%;
   }
 
 
-  .testimonial{
+  .testimonial {
     flex-direction: column;
     align-items: center;
   }
 
-  .testimonial__avatar{
+  .testimonial__avatar {
     width: 120px;
     height: 120px;
   }
@@ -664,11 +675,11 @@ p {
     margin-bottom: 20px;
   }
 
-  .testimonial__speech-bubble{
+  .testimonial__speech-bubble {
     order: 1;
   }
 
-  .arrow-up{
+  .arrow-up {
     width: 50px;
     height: 50px;
     font-size: 30px;
@@ -679,8 +690,8 @@ p {
 
   .category__btn.selected .category__count,
   .category__btn:hover .category__count {
-  opacity: 1;
-  top: 6px;
-}
+    opacity: 1;
+    top: 6px;
+  }
 
 }
